@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #ee4d4d #ee4d4d;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserInfoController">
+   <children>
+      <TextField fx:id="tfn" layoutX="38.0" layoutY="78.0" onAction="#saveUserInfo" promptText="Firstname" />
+      <TextField fx:id="tln" layoutX="217.0" layoutY="78.0" onAction="#saveUserInfo" promptText="Lastname" />
+      <TextField fx:id="tun" layoutX="37.0" layoutY="116.0" onAction="#saveUserInfo" prefHeight="25.0" prefWidth="328.0" promptText="mail,username@" />
+      <TextField fx:id="tbgp" layoutX="37.0" layoutY="188.0" onAction="#saveUserInfo" prefHeight="25.0" prefWidth="328.0" promptText="Blood Group" />
+      <TextField fx:id="tage" layoutX="36.0" layoutY="223.0" onAction="#saveUserInfo" prefHeight="25.0" prefWidth="328.0" promptText="Age" />
+      <Button layoutX="159.0" layoutY="288.0" mnemonicParsing="false" onAction="#saveUserInfo" text="SignUp" textFill="#c91f1f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="162.0" layoutY="338.0" mnemonicParsing="false" onAction="#cancelPerformed" text="Cancel" textFill="#bc0f0f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="121.0" layoutY="29.0" prefHeight="35.0" prefWidth="162.0" text="Online Doctor" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass" layoutX="38.0" layoutY="152.0" onAction="#saveUserInfo" prefHeight="25.0" prefWidth="328.0" promptText="Password" />
+      <Label fx:id="msg" layoutX="150.0" layoutY="260.0" prefHeight="17.0" prefWidth="177.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

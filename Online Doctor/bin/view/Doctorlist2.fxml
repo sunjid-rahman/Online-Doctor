@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AppointmentController">
+   <children>
+      <TableView fx:id="Doctorlist2" prefHeight="505.0" prefWidth="717.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="39.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="135.99999696016312" text="Name" />
+          <TableColumn fx:id="Qualification" prefWidth="126.99998474121094" text="Qualification" />
+            <TableColumn fx:id="Expertise" prefWidth="111.0" text="Expertise" />
+            <TableColumn fx:id="Organization" prefWidth="134.0" text="Organization" />
+            <TableColumn fx:id="Mobile_No" minWidth="7.0" prefWidth="92.0" text="Mobile_No" />
+        </columns>
+      </TableView>
+      <VBox layoutX="626.0" layoutY="33.0" prefHeight="412.0" prefWidth="135.0">
+         <children>
+            <GridPane fx:id="Y5" prefHeight="151.0" prefWidth="135.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.0" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="60.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="92.0" text="  Appoinment">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="Y1" mnemonicParsing="false" onAction="#YesDoct1" text="YES" GridPane.rowIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="N1" mnemonicParsing="false" onAction="#NoDoct1" text="NO" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="Y2" mnemonicParsing="false" onAction="#YesDoct2" text="YES" toggleGroup="$group" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="N2" mnemonicParsing="false" onAction="#NoDoct2" text="NO" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <RadioButton fx:id="Y3" mnemonicParsing="false" onAction="#YesDoct3" text="YES" toggleGroup="$group" GridPane.rowIndex="3" />
+                  <RadioButton fx:id="N3" mnemonicParsing="false" onAction="#NoDoct3" text="NO" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <RadioButton fx:id="Y4" mnemonicParsing="false" onAction="#YesDoct4" text="YES" toggleGroup="$group" GridPane.rowIndex="4" />
+                  <RadioButton fx:id="N4" mnemonicParsing="false" onAction="#NoDoct4" text="NO" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <RadioButton fx:id="Yes5" mnemonicParsing="false" onAction="#YesDoct5" text="YES" toggleGroup="$group" GridPane.rowIndex="5" />
+                  <RadioButton fx:id="N5" mnemonicParsing="false" onAction="#NoDoct5" text="NO" toggleGroup="$group" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <Label layoutX="27.0" layoutY="2.0" prefHeight="34.0" prefWidth="176.0" text="Doctor Information" textFill="#1e15a1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
